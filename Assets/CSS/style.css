@@ -12,7 +12,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    color: yellow;  
+    color: #FFEA2F;  
 }
  .presentation
 {
@@ -58,7 +58,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    color: yellow;
+    color: #FFEA2F;
 }
 #main4
 {
@@ -91,7 +91,7 @@ body
 #main5
 {
     margin-top: 100px;
-    background-color:yellow;
+    background-color:#FFEA2F;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -99,6 +99,11 @@ body
     width: 100%;
     height: 150px;
     font-family:'Oswald';
+    
+}
+#main > p 
+{
+    color: black;
 }
 .logoLeft
 {
@@ -207,7 +212,7 @@ a:hover
 #mainComment
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 600px;
     /* margin-top: 20px; */
@@ -236,7 +241,8 @@ a:hover
 {
     width: 80%;
     height: 90%;
-    background-size: 100%;
+    background-size: cover;
+    /* background-color: red; */
 }
 /* Button achat + text */
 #buyTittle
@@ -246,13 +252,16 @@ a:hover
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 #buyButton
 {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 100px;
+    align-items: center;
+    /* margin-top: 100px; */
+    height: 600px;
+    /* background-color: cornflowerblue; */
 }
 button
 {
@@ -282,142 +291,6 @@ button:hover
     text-align: justify;
 }
 
-@media screen and (max-width: 400px){
-    nav
-    {
-      width: 100%;
-    }
-    #ulNav
-    {
-        background-color: blueviolet;
-    }
-    .liNav
-   {
-       visibility: hidden;
-   } 
-    .liNavBurger
-    {
-      visibility: visible;
-      
-    }
-    #mainComment
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly ;
-        align-items: center;
-        padding-top: 10%;
-        height: 800px;
-        width: 100%;
-        background-color: blueviolet;
-    }
-    #titreComment
-    {
-       padding: 5%;
-       margin-bottom: 50px;
-       background-color: cadetblue;
-    }
-    .illuComment
-    {
-        width: 100%;
-        /* height: calc (100% / 3);  */
-        margin-top: 20px; 
-        padding-top: 10px;
-    }
-    .illuComment > img
-    {
-        width: 50%;
-        height: 80%;
-        background-size: 100%;
-    }
-   #buyButton
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly ;
-        align-items: center;
-        height: 600px;
-        width: 100%;
-        margin-top: 0;
-    }
-    #buyTittle
-    {
-        margin-top: 80px;
-        padding: 5%;
-    }
-    .buyText
-    {
-       padding: 6%;        
-    }
-        #main2
-        {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 8px;
-        }
-        #main4
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 20px;
-    }
-        #main5
-    {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        height: 340px;  
-    }
-    .titre
-    {
-        text-align: center;
-        font-size: 8px;
-    }
-    .titre1
-    {
-        text-align: center;
-        font-size: 27px;
-        margin-top: 30px;
-    }
-    .blockLeft
-    {
-        width: 300px;
-        height: 200px;
-    }
-    .blockRight
-    {
-        width: 300px;
-        height: 200px;
-    }
-    .mention
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center
-    }
-    .block
-    {
-        margin-top: 20px;
-    }
-    .mention > p
-    {
-        text-align: center;
-        justify-content: center 
-    }
-    .image
-    {
-    height: 200px;
-    width: 100px;
-    }
-}
-body{
-    margin: 0px;
-    background-color :#241E1E;
-    font-family:"Oswald" ;
-}
 
 header{
     display: flex;
@@ -530,6 +403,144 @@ p{
 
         h1, h2
         {
-        font-size:17px;
+        font-size:25px;
+        }
+        nav
+        {
+          width: 100%;
+          height: 15%;
+          position: sticky;
+          top: 0%; 
+        }
+        #ulNav
+        {
+            /* background-color: blueviolet; */
+            margin-top: 0;
+        }
+        .liNav
+       {
+           visibility: hidden;
+       } 
+        .liNavBurger
+        {
+          visibility: visible;
+        }
+        #mainComment
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly ;
+            align-items: center;
+            padding-top: 10%;
+            height: 800px;
+            width: 100%;
+            /* background-color: blueviolet; */
+        }
+        #titreComment
+        {
+           padding: 5%;
+           margin-bottom: 50px;
+           /* background-color: cadetblue; */
+        }
+        .illuComment
+        {
+            width: 100%;
+            /* height: calc (100% / 3);  */
+            margin-top: 20px; 
+            padding: 5%;
+            
+        }
+        .illuText
+        {
+             padding: 10px;
+        }
+        .illuComment > img
+        {
+            width: 50%;
+            height: 80%;
+            background-size: 100%;
+        }
+        #buyButton
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly ;
+            align-items: center;
+            height: 600px;
+            width: 100%;
+            margin-top: 0;
+        }
+        #buyTittle
+        {
+            margin-top: 80px;
+            padding: 5%;
+        }
+        .buyText
+        {
+           padding: 6%;        
+        }
+            #main2
+            {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 8px;
+            }
+            #main4
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 20px;
+        }
+            #main5
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height:400px; 
+            width: 100%; 
+        }
+        .titre
+        {
+            text-align: center;
+            font-size: 8px;
+        }
+        .titre1
+        {
+            text-align: center;
+            font-size: 27px;
+            margin-top: 30px;
+        }
+        .blockLeft
+        {
+            width: 300px;
+            height: 200px;
+        }
+        .blockRight
+        {
+            width: 300px;
+            height: 200px;
+        }
+        .mention
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center
+        }
+        .block
+        {
+            margin-top: 20px;
+        }
+        .mention > p
+        {
+            text-align: center;
+            justify-content: center;
+        }
+        .image
+        {
+        height: 200px;
+        width: 100px;
         }
     }
