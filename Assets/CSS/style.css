@@ -1,0 +1,120 @@
+body{
+    margin: 0px;
+    background-color :#241E1E;
+    font-family:"Oswald" ;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: no-repeat url("../Images/photoHeader.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+ }
+
+#logo{
+    height: 250px;  
+    padding-top: 450px;
+}
+
+#boutonsReseaux{
+    position: fixed;
+    top: 40px;
+    right: 0%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+#boutonInstagram, #boutonTwitter, #boutonFacebook{
+    height: 75px;
+}
+
+#mainPresentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+h1, h2{
+    font-size:40px;
+    font-weight:700;
+    color: #FFEA2F;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 50px;
+}
+
+p{
+    font-size:25px;
+    color: white;
+    text-align: center;
+    padding: 0 50px;
+}
+
+#packshot{
+    width: 500px;
+    }
+        
+@media screen and (max-width:930px)
+    {
+        h1, h2
+        {
+        font-size:30px;
+        }
+        
+        p
+        {
+        font-size:18px;
+        color: white;
+        text-align: center;
+        padding: 0 75px;
+        }
+
+        #packshot
+        {
+        width: 300px;
+        }
+
+        #logo
+        {
+        height: 150px;  
+        padding-top: 450px;
+        }
+    }
+
+@media screen and (max-width:630px)
+    {
+        #boutonInstagram, #boutonTwitter, #boutonFacebook
+        {
+        height: 50px;
+        }
+
+        h1, h2
+        {
+        font-size:25px;
+        }
+    }
+
+@media screen and (max-width:400px)
+    {
+        header
+        {
+        background-size: cover;
+        height: 600px;
+        }
+
+        #logo
+        {
+        padding-top: 280px;
+        height: 200px;  
+        }
+
+        h1, h2
+        {
+        font-size:17px;
+        }
+    }
